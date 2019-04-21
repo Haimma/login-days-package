@@ -40,6 +40,8 @@ nodemon
 
 node server.js  (in new window)
 
+go to the link
+http://localhost:4200
 
 
 
