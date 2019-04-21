@@ -1,4 +1,6 @@
-in this project im using 
+project with signup, login, calculate packages and calculate business days
+
+In this project im using 
 Angular - authentication, token, service, components, middleware, models, controllers, routes, AuthGuard
 NodeJS with express
 mysql
