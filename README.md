@@ -6,7 +6,7 @@ NodeJS with express
 mysql
 
 # to run this project
-first go to before folder:
+first go to 'before' folder and run this lines:
 
 npm install --save mysql express
 
@@ -28,7 +28,7 @@ http://localhost:3000/createdaysstable
 http://localhost:3000/createpackagesstable
 
 
-back to login-days-package folder
+back to 'login-days-package' folder and run this lines:
 
 npm install --save mysql express
 
