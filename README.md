@@ -1,3 +1,30 @@
+in this project im using 
+Angular - authentication, token, service, components, middleware, models, controllers, routes, AuthGuard
+NodeJS with express
+mysql
+
+# to run this project
+first go to before folder:
+npm install --save mysql express
+npm install -g nodemon (if not installed before)
+nodemon
+
+now to build the DB
+http://localhost:3000/createdb
+now uncomment line 8 in app.js
+http://localhost:3000/createusersstable
+http://localhost:3000/createdaysstable
+http://localhost:3000/createpackagesstable
+
+back to login-days-package folder
+npm install --save mysql express
+ng add @angular/material
+custom , yes, yes
+nodemon
+node server.js  (in new window)
+
+
+
 # LoginDaysPackage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
