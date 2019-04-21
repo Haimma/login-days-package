@@ -12,9 +12,13 @@ nodemon
 now to build the DB
 http://localhost:3000/createdb
 now uncomment line 8 in app.js
+
 http://localhost:3000/createusersstable
+
 http://localhost:3000/createdaysstable
+
 http://localhost:3000/createpackagesstable
+
 
 back to login-days-package folder
 npm install --save mysql express
