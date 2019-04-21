@@ -1,0 +1,53 @@
+<h1>Calculation Packages</h1>
+<mat-card>
+  <form (submit)="onAddPackageCal(packageForm)" #packageForm="ngForm">
+      <h4>mat select</h4>
+      <mat-form-field>
+        <mat-label>Width</mat-label>
+        <mat-select name="width" [(ngModel)]="width" required>
+          <mat-option *ngFor="let v of values" [value]="v">
+            {{v.num}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="widthControl.hasError('required')">Please choose an width</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Height</mat-label>
+        <mat-select name="height" [(ngModel)]="height" required>
+          <mat-option *ngFor="let v of values" [value]="v">
+            {{v.num}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="heightControl.hasError('required')">Please choose an height</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Length</mat-label>
+        <mat-select name="length" [(ngModel)]="length" required>
+          <mat-option *ngFor="let v of values" [value]="v">
+            {{v.num}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="lengthControl.hasError('required')">Please choose an length</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Weight</mat-label>
+        <mat-select name="weight" [(ngModel)]="weight" required>
+          <mat-option *ngFor="let v of values" [value]="v">
+            {{v.num}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="weightControl.hasError('required')">Please choose an weight</mat-error>
+      </mat-form-field>
+
+
+    <div class = "info-button">
+      <button mat-raised-button
+      color = "primary"
+      type ="submit"
+      [disabled]="packageForm.invalid">Calculate and Save</button>
+    </div>
+  </form>
+</mat-card>

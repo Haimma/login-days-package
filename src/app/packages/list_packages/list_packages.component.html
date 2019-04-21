@@ -1,0 +1,11 @@
+<h1>My Packages</h1>
+<mat-card>
+    <div *ngIf = "packages.length > 0">
+      <mat-list role="list" *ngFor = "let package of packages" >
+        <mat-list-item role="listitem">Width: {{package.width}} Height: {{package.height}} Length: {{package.length}} Weight: {{package.weight}}</mat-list-item>
+        <br>
+        <mat-list-item role="listitem">Rate: {{package.rate}}</mat-list-item>
+      </mat-list>
+      </div>
+      <p class = 'mat-body-1' *ngIf="packages.length <= 0">There are no packages calculated</p>
+  </mat-card>

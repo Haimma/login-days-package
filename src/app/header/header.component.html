@@ -1,0 +1,32 @@
+<mat-toolbar color = "primary">
+  <span *ngIf='userIsAuthenticated'>
+    <a routerLink = '/'>login-days-package</a>
+  </span>
+  <span *ngIf='!userIsAuthenticated'>
+      <a routerLink = '/login'>login-days-package</a>
+  </span>
+  <span class = "spacer"></span>
+  <ul>
+    <li *ngIf='userIsAuthenticated'>
+      <a mat-button routerLink ='/addBusinessDays' routerLinkActive = "mat-accent">Calculate Business Days</a>
+    </li>
+    <li *ngIf='userIsAuthenticated'>
+      <a mat-button routerLink = '/getBusinessDays' routerLinkActive = "mat-accent">My Business Days</a>
+    </li>
+    <li *ngIf='userIsAuthenticated'>
+        <a mat-button routerLink ='/addPackages' routerLinkActive = "mat-accent">Calculate Package</a>
+      </li>
+    <li *ngIf='userIsAuthenticated'>
+      <a mat-button routerLink ='/getPackages' routerLinkActive = "mat-accent">My Packages</a>
+    </li>
+    <li *ngIf='!userIsAuthenticated'>
+      <a mat-button routerLink ='/login' routerLinkActive = "mat-accent">Login</a>
+    </li>
+    <li *ngIf='!userIsAuthenticated'>
+      <a mat-button routerLink ='/signup' routerLinkActive = "mat-accent">Signup</a>
+    </li>
+    <li *ngIf='userIsAuthenticated'>
+      <button mat-button (click)='onLogout()'>Logout</button>
+    </li>
+  </ul>
+</mat-toolbar>

@@ -1,0 +1,43 @@
+<h1>Calculate Business Days</h1>
+<mat-card>
+  <form (submit)="onAddDayCal(dayForm)" #dayForm="ngForm">
+    <div>
+      <mat-form-field>
+          <input
+          matInput
+          [matDatepicker]="startDate"
+          placeholder="Start Date"
+          name="startDate"
+          ngModel
+          required
+          #startDate="ngModel">
+          <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+          <mat-datepicker #startDate></mat-datepicker>
+          <mat-error *ngIf="startControl.invalid">Please choose start date.</mat-error>
+        </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+          <input
+          matInput
+          [matDatepicker]="endDate"
+          placeholder="End Date"
+          name="endDate"
+          ngModel
+          required
+          #endDate="ngModel">
+          <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+          <mat-datepicker #endDate></mat-datepicker>
+          <mat-error *ngIf="endControl.invalid">Please choose date.</mat-error>
+        </mat-form-field>
+    </div>
+    <div class = "info-button">
+      <button mat-raised-button
+      color = "primary"
+      type ="submit"
+      [disabled]="dayForm.invalid">Calculate and Save</button>
+    </div>
+  </form>
+</mat-card>
+
+<!-- <app-list-days ></app-list-days> -->
