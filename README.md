@@ -19,7 +19,7 @@ nodemon
 now to build the DB
 http://localhost:3000/createdb
 
-now uncomment line 8 in app.js
+now uncomment line 8 in app.js and run this lines in the url
 
 http://localhost:3000/createusersstable
 
