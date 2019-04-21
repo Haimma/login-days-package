@@ -5,9 +5,14 @@ mysql
 
 # to run this project
 first go to before folder:
+
 npm install --save mysql express
+
 npm install -g nodemon (if not installed before)
+
 nodemon
+
+
 
 now to build the DB
 http://localhost:3000/createdb
@@ -22,11 +27,17 @@ http://localhost:3000/createpackagesstable
 
 
 back to login-days-package folder
+
 npm install --save mysql express
+
 ng add @angular/material
+
 custom , yes, yes
+
 nodemon
+
 node server.js  (in new window)
+
 
 
 
