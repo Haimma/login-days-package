@@ -8,6 +8,7 @@ NodeJS with express
 mysql
 
 # to run this project
+must use xampp
 first go to 'before' folder and run this lines:
 
 npm install --save mysql express
